@@ -1,0 +1,48 @@
+
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Spring Boot Thymeleaf Hello World Example</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<form name="registerSuccess" id ="registerSuccess" th:action="@{/registerSuccess}" method="post">
+		<table>
+
+			<tr>
+				<td>User Name</td>
+				<td><input type="text" name="name"/></td>
+			<!-- 	<td><div  th:errors="*{name}"></div></td> -->
+			</tr>
+
+			<tr>
+				<td>Email</td>
+				<td><input type="text" name="email"/></td>
+				<!-- <td><div  th:errors="*{email}"></div></td> -->
+			</tr>
+
+
+			<tr>
+				<td>Age</td>
+				<td><input type="text" name="age"/></td>
+				<!-- <td><div  th:errors="*{age}"></div></td> -->
+			</tr>
+
+			<tr>
+				<td>Country</td>
+				<td><select name="country">
+						<option value="India">India</option>
+						<option value="US">US</option>
+						<option value="Other">Other</option>
+				</select></td>
+			</tr>
+
+			<tr>
+				<td><input type="submit" value="Register"/></td>
+			</tr>
+
+
+		</table>
+	</form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Spring Boot Thymeleaf Hello World Example</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+		<h2 align="center">User Management Application</h2>
+		<a href="/register">back</a>
+    <div align="center">
+        <table border="1" cellpadding="5">
+            <caption><h3>List of Users</h3></caption>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Email</th>
+                <th>Country</th>
+            </tr>
+            <tr th:each="user,iterationStatus  : ${userList}">
+      	<td  th:value="${user.name}"> <span th:text ="${user.name}"></span></td>
+        <td  th:value="${user.age}"><span th:text ="${user.age}"></span></td>
+        <td th:value="${user.email}"><span th:text ="${user.email}"></span></td>
+        <td th:value="${user.country}"><span th:text ="${user.country}"></span></td>
+       
+      </tr>
+           
+        </table>
+    </div>	
+</body>
+</html>

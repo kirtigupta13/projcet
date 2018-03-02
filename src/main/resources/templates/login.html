@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Spring Boot Thymeleaf Hello World Example</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<font color="red">${errorMessage}</font>
+	<form action="/login" method="POST">
+		Name : <input name="name" type="text" /> 
+		Password : <input name="password" type="password" /> <input type="submit" />
+	</form>
+</body>
+</html>
